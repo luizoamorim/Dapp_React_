@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import logo from '../../ethereum.svg'
 import './styles.css'
@@ -7,12 +7,15 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const users = [{userName: 'luiz.oamorim@gmail.com', userPass: '1234'}]
+    
     const [userName, setUserName] = useState();
     const [userPass, setUserPass] = useState();
 
+    let history = useHistory();
+
     const handleLogin = () => {
         users.filter(user => user.userName === userName && user.userPass === userPass).length > 0 ?
-        <Link to="/dashboard" /> :
+        history.push('/dashboard') :
         toast('User do not exist!')
     }
 

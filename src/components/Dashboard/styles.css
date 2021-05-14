@@ -1,0 +1,44 @@
+.Dashboard {
+    
+}
+
+.Dashboard-header {
+    background-color: #080c14;    
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;        
+    color: white;
+}
+
+.Dashboard-user-photo {
+    margin-top: 2.4em;
+    border: 10px solid #0e182b;
+    width: 150px;
+}
+
+.Dashboard-user-photo {
+    border-radius: 50%;
+}
+
+.Dashboard-user-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Dashboard-user-personal {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.4rem;    
+}
+
+h1 {
+    margin: 5px;
+}
+
+p {
+    margin : 5px;
+}

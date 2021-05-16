@@ -6,6 +6,7 @@ export function addUser(user) {
 }
   
 export function addPhoto(userName, photo) {
+    console.log("BATE ADD PHOTO")
     return {
       type: 'ADD_PHOTO',
       userName,
